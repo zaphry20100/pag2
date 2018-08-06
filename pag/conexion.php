@@ -1,0 +1,1 @@
+<?php $conexion = mysqli_connect('localhost', 'root', '','planetas' ) or die(mysqli_connect_error()); ?>

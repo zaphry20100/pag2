@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pla.net</title>
+
+
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Farsan|Mogra|Mr+Bedfort|Pacifico|Romanesco|The+Girl+Next+Door" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+
+	</head>
+	<body class="background">
+
+		<nav class="navbar navbar-expand-lg" style = "background-color: none; color: black; margin-bottom: 0;">
+			
+		
+			
+		  <a class="navbar-brand" style=" text-decoration: none;">Pla.net</a>
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+		    <span class="navbar-toggler-icon"></span>
+
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+		    <ul class="navbar-nav mr-auto">
+
+		      <li class="nav-item active">
+
+		        <a class="nav-link" href="#" style=" text-decoration: none;">Home <span class="sr-only">(current)</span></a>
+
+		      </li>
+		      <li class="nav-item">
+
+		        <a class="nav-link" href="#">Link</a>
+
+		      </li>
+
+		      <li class="nav-item dropdown">
+
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Dropdown
+		        </a>
+
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+		          <a class="dropdown-item" href="#">Action</a>
+
+		          <a class="dropdown-item" href="#">Another action</a>
+
+		          <div class="dropdown-divider"></div>
+
+		          <a class="dropdown-item" href="#">Something else here</a>
+
+		        </div>
+
+		      </li>
+
+		    </ul>
+
+		  </div>
+
+		</nav>
+
+
+
+
+
+<!-- 		<div class="mainBitch"  id="OP"> -->
+			
+
+			
+
+			<div class="mainDiv" id="OP2" style="z-index: -1;" >
+
+			</div>
+
+			<div class="home">
+			
+				<h1 onclick="animateMe();" id="Home">Home</h1>
+
+			</div>
+
+			<button class="discover" type="button" id="Button" onclick="animateMe();">Discover</button>
+
+
+
+		
+
+			<div class="mercury" id="Mercury">
+				
+				<img src="planetas/mercury.png" width="100%" height="100%">
+
+			</div>
+
+			<div class="venus" id="Venus">
+				
+				<img src="planetas/venus.png">
+
+			</div>
+
+			
+
+			<div class="earth" id="Earth">
+					
+					<img src="planetas/earth.png">
+
+			</div>
+
+			<div class="mars" id="Mars">
+					
+					<img src="planetas/mars.png">
+
+			</div>
+
+			<div class="jupiter" id="Jupiter">
+					
+					<img src="planetas/jupiter.png">
+
+			</div>
+
+			<div class="saturn" id="Saturn">
+					
+					<img src="planetas/saturn.png">
+
+			</div>		
+			
+			<div class="uranus" id="Uranus">
+					
+					<img src="planetas/uranus.png">
+
+			</div>	
+
+			<div class="neptune" id="Neptune">
+					
+					<img src="planetas/neptune.png">
+
+			</div>
+
+			<div class="pluto" id="Pluto">
+					
+					<img src="planetas/pluto.png" width="100%" height="100%">
+
+			</div>
+
+
+
+<!-- 		</div> -->
+
+
+
+
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<script>
+			
+
+			
+
+			function $(id){
+		 		return document.getElementById(id);
+		 	}
+
+
+			function animateMe() {
+        		 
+					$("Button").style.display ="none";
+				
+
+					$("Home").style.animationName ="byeFelicia";
+					$("Home").style.animationDuration = "1s";
+					$("Home").style.animationFillMode = "forwards";
+
+					$("OP2").style.animationName = "smol";
+					$("OP2").style.animationDuration = "3s";
+					$("OP2").style.animationDelay = "";
+					$("OP2").style.animationFillMode = "forwards";
+					
+
+
+            		$("Mercury").style.animationName = "mercury";
+            		$("Mercury").style.animationDuration = ".5s";
+            		$("Mercury").style.animationFillMode = "forwards";
+           			
+            		$("Venus").style.animationName = "venus";
+            		$("Venus").style.animationDuration = ".5s";
+            		$("Venus").style.animationDelay = ".2s";
+            		$("Venus").style.animationFillMode = "forwards";
+
+            		$("Earth").style.animationName = "earth";
+            		$("Earth").style.animationDuration = ".5s";
+            		$("Earth").style.animationDelay = ".4s";
+            		$("Earth").style.animationFillMode = "forwards";
+
+            		$("Mars").style.animationName = "mars";
+            		$("Mars").style.animationDuration = ".5s";
+            		$("Mars").style.animationDelay = ".6s";
+            		$("Mars").style.animationFillMode = "forwards";
+ 
+             		$("Jupiter").style.animationName = "jupiter";
+            		$("Jupiter").style.animationDuration = ".5s";
+            		$("Jupiter").style.animationDelay = ".8s";
+            		$("Jupiter").style.animationFillMode = "forwards";
+
+            		$("Saturn").style.animationName = "saturn";
+            		$("Saturn").style.animationDuration = ".5s";
+            		$("Saturn").style.animationDelay = "1s";
+            		$("Saturn").style.animationFillMode = "forwards";
+    		
+            		$("Uranus").style.animationName = "uranus";
+            		$("Uranus").style.animationDuration = ".5s";
+            		$("Uranus").style.animationDelay = "1.2s";
+            		$("Uranus").style.animationFillMode = "forwards";
+
+             		$("Neptune").style.animationName = "neptune";
+            		$("Neptune").style.animationDuration = ".5s";
+            		$("Neptune").style.animationDelay = "1.4s";
+            		$("Neptune").style.animationFillMode = "forwards";           
+
+            		$("Pluto").style.animationName = "pluto";
+            		$("Pluto").style.animationDuration = ".5s";
+            		$("Pluto").style.animationDelay = "1.6s";
+            		$("Pluto").style.animationFillMode = "forwards";
+
+
+    		}
+
+
+
+
+
+		</script>
+
+
+	</body>
+</html>

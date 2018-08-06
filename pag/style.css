@@ -1,0 +1,518 @@
+
+body{
+	max-height: 2000px;
+}
+
+.background{
+	background-image: url("planetas/space.png");
+	position: relative;
+	max-height: 4000px;
+	background-size: auto;
+
+}
+
+.mainDiv{
+	margin-top: 2.5%;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 80vh;
+	box-sizing: border-box;
+	margin-bottom: 0;
+}
+
+
+.mainDiv2{
+	position: absolute;
+	width: 100%;
+	height: 55vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	top: 363px;
+	z-index: 0;
+
+}
+
+.middleFinger{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.arrow{
+	height: 15px; 
+	width: 30px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 1;
+	margin-top: 0;
+	margin-bottom: 0;
+	z-index: 1;
+	top: 347px;
+	opacity: 0;
+
+}
+
+a{
+	text-decoration: none;
+	color: grey;
+	font-weight: bolder;
+}
+
+.mercury{
+	
+	width: 100px;
+	position: absolute;
+	display: inline-block;
+	top: 85%;
+	height: 100px;
+	
+	z-index: 9;
+}
+
+.venus{
+	
+	position: absolute;
+	display: inline-block;
+	width: 215px;
+	top: 74%;
+	left: 0.2%;
+	z-index: 8;
+}
+
+.earth{
+	
+	position: absolute;
+	display: inline-block;
+	width: 240px;
+	top: 67%;
+	left: 3%;
+	z-index: 7;
+}
+
+.mars{
+	
+	position: absolute;
+	display: inline-block;
+	width: 200px;
+	top: 66%;
+	left: 9%;
+	z-index: 6;
+}
+
+.jupiter{
+	
+	width: 410px;
+	position: absolute;
+	left: 9%;
+	top: 39%;
+	display: inline-block;
+	z-index: 5;
+}
+
+.saturn{
+	
+	position: absolute;
+	width: 400px;
+	top: 33%;
+	left: 12%;
+	display: inline-block;
+	z-index: 4;
+}
+
+.uranus{
+	
+	width: 290px;
+	position: absolute;
+	top: 33%;
+	left: 30%;
+	display: inline-block;
+	z-index: 3;
+}
+
+.neptune{
+	
+	position: absolute;
+	display: inline-block;
+	width: 290px;
+	top: 28.8%;
+	left: 35%;
+	z-index: 2;
+}
+
+.pluto{
+	
+	position: absolute;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	top: 20%;
+	left: 65%;
+	z-index: 1;
+}
+
+
+@font-face{
+	font-family: customFontName;
+	src: url('fonts/Sunset.otf'),
+	url('fonts/Sunset.ttf') format('truetype'), /*to maximum browser compatibility you can do this*/
+	url('fonts/Sunset.svg#font') format('svg');
+}
+
+
+.insideDiv{
+	color: #dbdbdb;
+	font-family: 'customFontName', cursive;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 40px;
+	font-weight: 0;
+	margin-top: 20px;
+	border-bottom: 1px solid white;
+	width: 50%;
+	opacity: 0;
+}
+
+.insideDiv2{
+	width: 50%;
+	position: absolute;
+	color: #dbdbdb;
+	text-align: center;
+	font-family: sans-serif;
+	left: 0; 
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	bottom: 200px;
+	opacity: 0;
+
+}
+
+.home{
+	
+	font-family: 'customFontName', cursive;
+	position: absolute;
+	display: inline-block;
+	z-index: 1;
+	opacity: 0;
+	top: 45%;
+	right: 15%;
+	font-size: 80px;
+	color: #dbdbdb;
+	animation-name: HD;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+
+}
+
+.discover{
+	position: absolute;
+	top: 83%;
+	right: 17%;
+	appearance: none;
+	background: none;
+	color: white;
+	font-family: sans-serif;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	border-radius: 2.7px;
+	border: 0.5px solid white;
+	opacity: 0;
+	animation-name: HD;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+	animation-duration: 2s;
+	z-index: 10;
+
+
+}
+
+
+/*.mainBitch:hover .home{
+	
+	animation-name: HD;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+
+}
+
+.mainBitch:hover .discover{
+	
+	animation-name: HD;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	animation-duration: 1.3s;
+
+}*/
+
+.discover:hover{
+	background-color:rgba(255, 255, 255, 0.5);
+
+}
+
+@keyframes HD{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+@keyframes mercury{
+	from{transform: translate(0vw ,0vh) rotate(0rad) scale(1,1);}
+	to{transform: translate(3vw ,-12vh) rotate(1turn) scale(1.89,1.89);}
+
+}
+
+@keyframes venus{
+	from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+	
+	to{transform: translate(10vw, -12.4vh) rotate(1turn) scale(.9,.9);}
+}
+
+@keyframes earth{
+	from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+	to{transform: translate(16.6vw, -12.4vh) rotate(1turn) scale(.75,.75);}
+}	
+
+@keyframes mars{
+	from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+	to{transform: translate(22.2vw, -10.5vh) rotate(1turn) scale(.87,.87);}
+}
+
+@keyframes jupiter{
+	from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+	to{transform: translate(27.3vw, -11.3vh) rotate(1turn) scale(.4,.4);}
+}
+
+@keyframes saturn{
+	from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+	to{transform: translate(33.3vw, -8.5vh) rotate(1turn) scale(.5,.5);}	
+}
+
+@keyframes uranus{
+	from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+	to{transform: translate(33.3vw, -2.5vh) rotate(1turn) scale(.65,.65);}	
+}
+
+@keyframes neptune{
+	from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+	to{transform: translate(38.7vw, -.5vh) rotate(1turn) scale(.65,.65);}	
+}
+
+@keyframes pluto{
+	from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+	to{transform: translate(26vw, 12.95vh) rotate(1turn) scale(2.8,2.8);}	
+}
+
+@keyframes byeFelicia{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+
+@keyframes smol{
+	from{height: 80vh;}
+	to{height: 25vh;}
+}
+
+@keyframes hiBitch{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+@media (max-width: 1000px){
+
+	.home{
+	
+	font-family: 'customFontName', cursive;
+	position: absolute;
+	display: inline-block;
+	z-index: 1;
+	opacity: 0;
+	top: 55%;
+	right: 5%;
+	font-size: 65px;
+	color: #dbdbdb;
+	animation-name: HD;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+
+	}
+
+	.discover{
+		position: absolute;
+		top: 88%;
+		right: 7%;
+		appearance: none;
+		background: none;
+		color: white;
+		font-family: sans-serif;
+		padding-left: 65px;
+		padding-right: 65px;
+		padding-top: 17px;
+		padding-bottom: 17px;
+		border-radius: 2.7px;
+		border: 0.5px solid white;
+		opacity: 0;
+		animation-name: HD;
+		animation-delay: 2.5s;
+		animation-fill-mode: forwards;
+		animation-duration: 2s;
+		z-index: 10;
+
+
+	}
+
+
+
+
+	.mercury{
+		
+		width: 100px;
+		position: absolute;
+		display: inline-block;
+		top: 85%;
+		height: 100px;
+		left: -1%;
+		top: 86%;
+		z-index: 9;
+	}
+
+	.venus{
+		
+		position: absolute;
+		display: inline-block;
+		width: 225px;
+		top: 73%;
+		left: -2%;
+		z-index: 8;
+	}
+
+	.earth{
+		
+		position: absolute;
+		display: inline-block;
+		width: 240px;
+		top: 64%;
+		left: 3%;
+		z-index: 7;
+	}
+
+	.mars{
+		
+		position: absolute;
+		display: inline-block;
+		width: 200px;
+		top: 63.6%;
+		left: 11%;
+		z-index: 6;
+	}
+
+	.jupiter{
+		
+		width: 410px;
+		position: absolute;
+		left: 5%;
+		top: 35%;
+		display: inline-block;
+		z-index: 5;
+	}
+
+	.saturn{
+		
+		position: absolute;
+		width: 400px;
+		top: 31%;
+		left: 5%;
+		display: inline-block;
+		z-index: 4;
+	}
+
+	.uranus{
+		
+		width: 290px;
+		position: absolute;
+		top: 33.7%;
+		left: 36%;
+		display: inline-block;
+		z-index: 3;
+	}
+
+	.neptune{
+		
+		position: absolute;
+		display: inline-block;
+		width: 290px;
+		top: 29.3%;
+		left: 42.7%;
+		z-index: 2;
+	}
+
+	.pluto{
+		
+		position: absolute;
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		top: 20%;
+		left: 88%;
+		z-index: 1;
+	}
+
+	@keyframes mercury{
+		from{transform: translate(0vw ,0vh) rotate(0rad) scale(1,1);}
+		to{transform: translate(3vw ,-12vh) rotate(1turn) scale(1,1);}
+
+	}
+
+	@keyframes venus{
+		from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+		
+		to{transform: translate(10vw, -12.4vh) rotate(1turn) scale(.9,.9);}
+	}
+
+	@keyframes earth{
+		from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+		to{transform: translate(16.6vw, -12.4vh) rotate(1turn) scale(.75,.75);}
+	}	
+
+	@keyframes mars{
+		from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+		to{transform: translate(22.2vw, -10.5vh) rotate(1turn) scale(.87,.87);}
+	}
+
+	@keyframes jupiter{
+		from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+		to{transform: translate(27.3vw, -11.3vh) rotate(1turn) scale(.4,.4);}
+	}
+
+	@keyframes saturn{
+		from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+		to{transform: translate(33.3vw, -8.5vh) rotate(1turn) scale(.5,.5);}	
+	}
+
+	@keyframes uranus{
+		from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+		to{transform: translate(33.3vw, -2.5vh) rotate(1turn) scale(.65,.65);}	
+	}
+
+	@keyframes neptune{
+		from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+		to{transform: translate(38.7vw, -.5vh) rotate(1turn) scale(.65,.65);}	
+	}
+
+	@keyframes pluto{
+		from{transform: translate(0vw, 0vh) rotate(0rad) scale(1,1);}
+		to{transform: translate(26vw, 12.95vh) rotate(1turn) scale(2.8,2.8);}	
+	}
+		
+}

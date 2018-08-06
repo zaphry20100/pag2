@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+    @-webkit-keyframes colorchange {
+     0% {
+       background-color: red;
+       opacity: 1.0;
+       -webkit-transform: scale(1.0) rotate(0deg);
+     }
+     33% {
+       background-color: blue;
+       opacity: 0.75;
+       -webkit-transform: scale(1.1) rotate(-5deg);
+     }
+     67% {
+       background-color: green;
+       opacity: 0.5;
+       -webkit-transform: scale(1.1) rotate(5deg);
+     }
+     100% {
+       background-color: red;
+       opacity: 1.0;
+       -webkit-transform: scale(1.0) rotate(0deg);
+     }
+    }
+    </style>
+
+    <script>
+    function colorchange(e) {
+        if (e.style.webkitAnimationName !== 'colorchange') {
+            e.style.webkitAnimationName = 'colorchange';
+            e.style.webkitAnimationDuration = '4s';
+
+            // make sure to reset the name after 4 seconds, otherwise another call to colorchange wont have any effect
+            setTimeout(function() {
+                e.style.webkitAnimationName = '';
+            }, 4000);
+        }
+    }
+    </script>
+    </head>
+
+    <body>
+        <div onclick="colorchange(this)">Hello World!</div>
+    </body>
+</html>
